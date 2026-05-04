@@ -5,55 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - IPL-Exchange</title>
     <style>
-        /* Yahan wahi colors hain jo aapke main page par hain */
+        /* Main Page Theme Colors */
         :root {
-            --primary: #001f3f;
-            --accent: #ffcc00;
+            --bg-black: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --accent-yellow: #ffcc00;
+            --text-white: #ffffff;
+            --text-gray: #cccccc;
         }
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; line-height: 1.6; }
-        
-        /* Navigation Menu Ka Style */
-        nav { background: var(--primary); padding: 15px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { color: var(--accent); }
 
-        header { background: #002d5b; color: white; text-align: center; padding: 40px 20px; }
-        .content { max-width: 800px; margin: 20px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h2 { color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
-        p { margin-bottom: 15px; }
-        .highlight { color: #0056b3; font-weight: bold; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-black);
+            color: var(--text-white);
+            line-height: 1.7;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #000000;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-yellow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: var(--text-white);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        nav a:hover { color: var(--accent-yellow); }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1500x500?text=IPL+Cricket+Background'); /* Aap yahan apni image link daal sakte hain */
+            background-size: cover;
+            border-bottom: 3px solid var(--accent-yellow);
+        }
+
+        header h1 {
+            color: var(--accent-yellow);
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Section Design */
+        .section-box {
+            background-color: var(--card-bg);
+            border: 1px solid #333;
+            border-left: 5px solid var(--accent-yellow);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: var(--accent-yellow);
+            margin-top: 0;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        .highlight {
+            color: var(--accent-yellow);
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+            color: var(--text-gray);
+        }
+
+        ul li::before {
+            content: "🏏 ";
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #000;
+            border-top: 1px solid #333;
+            color: #666;
+            font-size: 13px;
+        }
     </style>
 </head>
 <body>
 
-<!-- Ye hamara naya Menu hai 🔗 -->
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
+    <a href="about.html" style="color: var(--accent-yellow);">About Us</a>
 </nav>
 
 <header>
     <h1>The Vision Behind IPL-Exchange</h1>
 </header>
 
-<div class="content">
-    <p>Welcome to <strong>IPL-Exchange</strong>, India’s most definitive and trusted gateway to the world of premium cricket betting exchanges. In an era where the digital landscape is flooded with countless platforms, finding a reliable partner can be a daunting task. IPL-Exchange was born out of a necessity to provide Indian cricket enthusiasts with a secure, transparent, and professional bridge to the industry’s most reputable exchanges.</p>
+<div class="container">
     
-    <h2>Our Mission: Redefining Trust</h2>
-    <p>Our mission is simple yet profound: to eliminate the uncertainty and risk associated with acquiring an online cricket ID. We understand that for an Indian player, cricket is more than just an emotion. When you decide to back your favorite team during the <span class="highlight">IPL 2026</span>, you deserve a platform that respects your enthusiasm and protects your investment.</p>
+    <div class="section-box">
+        <p>Welcome to <span class="highlight">IPL-Exchange</span>, India’s most definitive and trusted gateway to the world of premium cricket betting exchanges. In an era where the digital landscape is flooded with countless platforms, finding a reliable partner can be a daunting task. IPL-Exchange was born out of a necessity to provide Indian cricket enthusiasts with a secure, transparent, and professional bridge to the industry’s most reputable exchanges.</p>
+    </div>
 
-    <h2>The IPL-Exchange Edge: Expertise and Verification</h2>
-    <p>What sets IPL-Exchange apart is our rigorous selection process. We only collaborate with elite exchanges that have a proven track record of player satisfaction. Our experts look at critical factors like <strong>Market Liquidity</strong>, <strong>Security Infrastructure</strong>, <strong>Financial Integrity</strong>, and <strong>Customer Support Quality</strong>.</p>
+    <div class="section-box">
+        <h2>Our Mission: Redefining Trust</h2>
+        <p>Our mission is simple yet profound: to eliminate the uncertainty and risk associated with acquiring an online cricket ID. We understand that for an Indian player, cricket is more than just a sport—it is an emotion. When you decide to back your favorite team during the <span class="highlight">IPL 2026</span>, you deserve a platform that respects your enthusiasm and protects your investment.</p>
+    </div>
 
-    <h2>A Human-Centric Approach</h2>
-    <p>We believe that the human element is irreplaceable. This is why we have pioneered the <strong>WhatsApp-led registration process</strong>. By connecting you with verified official representatives, we ensure your account setup is handled by a professional who can answer your questions in real-time.</p>
+    <div class="section-box">
+        <h2>The IPL-Exchange Edge</h2>
+        <p>What sets IPL-Exchange apart is our rigorous selection process. Our team conducts regular audits of every platform we feature, looking at critical factors:</p>
+        <ul>
+            <li><strong>Market Liquidity:</strong> High-volume trades without affecting odds.</li>
+            <li><strong>Security Infrastructure:</strong> Bank-grade encryption and secure logins.</li>
+            <li><strong>Financial Integrity:</strong> Instant UPI deposits and 15-minute withdrawals.</li>
+            <li><strong>Customer Support:</strong> Testing responsiveness for real-time help.</li>
+        </ul>
+    </div>
 
-    <h2>Why Millions Choose Us</h2>
-    <p>Over the years, we have grown into a community of millions. Our users choose us because we act as a filter, removing the "noise" of unreliable bookies and leaving you with high-quality exchanges like <strong>Fairplay, Dreamexch, GuruBhai247, and AllPanel</strong>.</p>
+    <div class="section-box">
+        <h2>Human-Centric Approach</h2>
+        <p>We have pioneered the <span class="highlight">WhatsApp-led registration process</span>. We know that Indian users value direct communication. By connecting you with verified official representatives, we ensure that your account setup is handled by a professional who can answer your questions in real-time.</p>
+    </div>
 
-    <h2>The Future of IPL-Exchange</h2>
-    <p>As we approach the IPL 2026 season, we are expanding our resources to help beginners understand the nuances of exchange trading and responsible gaming. We are building a legacy of trust and excellence.</p>
+    <div class="section-box">
+        <h2>Why Millions Choose Us</h2>
+        <p>Our users choose us because we act as a filter, removing unreliable bookies and leaving you with high-quality exchanges like <span class="highlight">Fairplay, Dreamexch, GuruBhai247, and AllPanel</span>.</p>
+    </div>
+
 </div>
+
+<footer>
+    © 2026 IPL-Exchange | India's Most Trusted ID Provider
+</footer>
 
 </body>
 </html>
